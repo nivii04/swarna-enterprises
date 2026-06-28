@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Swarna Enterprises for industrial machinery, tea manufacturing machines, food processing equipment, industrial motors, spare parts, and business inquiries." />
+  <meta name="keywords" content="Swarna Enterprises contact, industrial machinery, tea manufacturing machines, food processing equipment, industrial motors, Coimbatore" />
+  <meta name="author" content="Swarna Enterprises" />
+  <title>Contact | Swarna Enterprises</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    :root {
+      --dark: #111827;
+      --primary: #1F2937;
+      --gold: #C9A227;
+      --gold-dark: #A9871E;
+      --white: #FFFFFF;
+      --light: #F8F9FA;
+      --border: #E5E7EB;
+      --text: #111827;
+      --muted: #6B7280;
+      --shadow-sm: 0 14px 38px rgba(17, 24, 39, 0.08);
+      --shadow-md: 0 22px 60px rgba(17, 24, 39, 0.14);
+      --shadow-lg: 0 32px 90px rgba(17, 24, 39, 0.2);
+      --transition: all 0.3s ease;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      color: var(--text);
+      background: var(--light);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: min(100% - 48px, 1440px);
+      margin-inline: auto;
+    }
+
+    .section-padding {
+      padding: 112px 0;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(17, 24, 39, 0.96);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 8px 30px rgba(17, 24, 39, 0.16);
+    }
+
+    .navbar {
+      width: min(100% - 48px, 1440px);
+      min-height: 86px;
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 36px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      color: var(--dark);
+      background: linear-gradient(135deg, #F2D66D, var(--gold));
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      box-shadow: 0 10px 24px rgba(201, 162, 39, 0.28);
+    }
+
+    .brand-name {
+      font-size: 1.08rem;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+    }
+
+    .nav-menu a {
+      position: relative;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.94rem;
+      font-weight: 700;
+      transition: var(--transition);
+    }
+
+    .nav-menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: var(--transition);
+    }
+
+    .nav-menu a:hover,
+    .nav-menu a.active {
+      color: var(--white);
+    }
+
+    .nav-menu a:hover::after,
+    .nav-menu a.active::after {
+      width: 100%;
+    }
+
+    .nav-menu .nav-cta {
+      padding: 12px 20px;
+      color: var(--dark);
+      background: var(--gold);
+      box-shadow: 0 12px 28px rgba(201, 162, 39, 0.26);
+    }
+
+    .nav-menu .nav-cta::after {
+      display: none;
+    }
+
+    .nav-menu .nav-cta:hover {
+      background: #E0BC43;
+      transform: translateY(-2px);
+    }
+
+    .nav-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 5px auto;
+      background: var(--white);
+      transition: var(--transition);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: var(--dark);
+      line-height: 1.12;
+      font-weight: 800;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+      color: var(--gold);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    .section-kicker::before {
+      content: "";
+      width: 42px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .contact-hero {
+      position: relative;
+      min-height: 560px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      background:
+        linear-gradient(120deg, rgba(17, 24, 39, 0.96), rgba(31, 41, 55, 0.86)),
+        repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 110px),
+        repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 110px);
+    }
+
+    .contact-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 76% 22%, rgba(201, 162, 39, 0.26), transparent 27%),
+        linear-gradient(180deg, transparent 55%, rgba(17, 24, 39, 0.82));
+    }
+
+    .contact-hero::after {
+      content: "";
+      position: absolute;
+      right: -120px;
+      bottom: -120px;
+      width: 440px;
+      height: 440px;
+      border: 1px solid rgba(201, 162, 39, 0.24);
+      transform: rotate(18deg);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      padding: 110px 0;
+    }
+
+    .hero-inner .section-kicker {
+      color: #F2D66D;
+    }
+
+    .hero-inner h1 {
+      max-width: 980px;
+      margin-bottom: 26px;
+      color: var(--white);
+      font-size: clamp(2.7rem, 5.8vw, 6rem);
+    }
+
+    .hero-inner p {
+      max-width: 860px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: clamp(1.05rem, 1.6vw, 1.32rem);
+    }
+
+    .section-heading {
+      max-width: 850px;
+      margin-bottom: 54px;
+    }
+
+    .section-heading h2 {
+      margin-bottom: 18px;
+      font-size: clamp(2rem, 3.5vw, 4rem);
+    }
+
+    .section-heading p {
+      font-size: 1.06rem;
+    }
+
+    .contact-info-section {
+      background: var(--white);
+    }
+
+    .contact-card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .contact-card,
+    .why-card {
+      position: relative;
+      padding: 34px 30px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      overflow: hidden;
+    }
+
+    .contact-card::before,
+    .why-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: var(--gold);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--transition);
+    }
+
+    .contact-card:hover,
+    .why-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(201, 162, 39, 0.45);
+      box-shadow: var(--shadow-md);
+    }
+
+    .contact-card:hover::before,
+    .why-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .card-icon {
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 26px;
+      color: var(--dark);
+      background: rgba(201, 162, 39, 0.16);
+      border: 1px solid rgba(201, 162, 39, 0.34);
+    }
+
+    .card-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      fill: none;
+    }
+
+    .contact-card h3,
+    .why-card h3 {
+      margin-bottom: 14px;
+      font-size: 1.22rem;
+    }
+
+    .contact-card p,
+    .contact-card address {
+      color: var(--muted);
+      font-style: normal;
+      line-height: 1.8;
+    }
+
+    .contact-card a:not(.whatsapp-btn) {
+      display: inline-block;
+      color: var(--primary);
+      font-weight: 800;
+      transition: var(--transition);
+    }
+
+    .contact-card a:not(.whatsapp-btn):hover {
+      color: var(--gold-dark);
+    }
+
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      margin-top: 18px;
+      padding: 12px 18px;
+      color: var(--white);
+      background: #16A34A;
+      font-weight: 800;
+      box-shadow: 0 14px 30px rgba(22, 163, 74, 0.22);
+      transition: var(--transition);
+    }
+
+    .whatsapp-btn:hover {
+      background: #15803D;
+      transform: translateY(-2px);
+    }
+
+    .form-section {
+      background:
+        linear-gradient(180deg, #F8F9FA 0%, #EEF1F4 100%);
+    }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 54px;
+      align-items: stretch;
+    }
+
+    .form-panel {
+      padding: 54px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-intro {
+      padding: 54px;
+      color: var(--white);
+      background:
+        linear-gradient(135deg, rgba(17, 24, 39, 0.96), rgba(31, 41, 55, 0.9)),
+        repeating-linear-gradient(45deg, rgba(201, 162, 39, 0.14) 0 2px, transparent 2px 20px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-intro h2 {
+      margin-bottom: 22px;
+      color: var(--white);
+      font-size: clamp(2rem, 3vw, 3.5rem);
+    }
+
+    .form-intro p {
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 1.06rem;
+    }
+
+    .inquiry-form {
+      display: grid;
+      gap: 22px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 9px;
+    }
+
+    .form-group label {
+      color: var(--dark);
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      min-height: 54px;
+      padding: 14px 16px;
+      color: var(--text);
+      background: #FFFFFF;
+      border: 1px solid #D1D5DB;
+      border-radius: 0;
+      font: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-group textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(201, 162, 39, 0.14);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 54px;
+      padding: 15px 28px;
+      border: 1px solid transparent;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: var(--dark);
+      background: linear-gradient(135deg, #F2D66D, var(--gold));
+      box-shadow: 0 16px 36px rgba(201, 162, 39, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #FFE07B, #D5AE31);
+      transform: translateY(-3px);
+      box-shadow: 0 22px 46px rgba(201, 162, 39, 0.38);
+    }
+
+    .why-section {
+      background: var(--white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .why-card p {
+      margin-top: 12px;
+    }
+
+    .map-section {
+      background:
+        linear-gradient(180deg, #F8F9FA 0%, #FFFFFF 100%);
+    }
+
+    .map-frame {
+      padding: 18px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .map-frame iframe {
+      display: block;
+      width: 100%;
+      height: 500px;
+    }
+
+    .cta-section {
+      background: var(--white);
+    }
+
+    .cta-banner {
+      position: relative;
+      padding: 70px;
+      color: var(--white);
+      background:
+        linear-gradient(120deg, rgba(17, 24, 39, 0.97), rgba(31, 41, 55, 0.91)),
+        linear-gradient(135deg, rgba(201, 162, 39, 0.24), transparent 48%);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    .cta-banner::before {
+      content: "";
+      position: absolute;
+      inset: 32px;
+      border: 1px solid rgba(201, 162, 39, 0.26);
+      pointer-events: none;
+    }
+
+    .cta-banner h2,
+    .cta-banner p,
+    .cta-banner a {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-banner h2 {
+      max-width: 920px;
+      margin-bottom: 18px;
+      color: var(--white);
+      font-size: clamp(2rem, 3.6vw, 4rem);
+    }
+
+    .cta-banner p {
+      max-width: 880px;
+      margin-bottom: 32px;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 1.08rem;
+    }
+
+    .site-footer {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr 1.1fr 0.8fr;
+      gap: 52px;
+      padding: 76px 0;
+    }
+
+    .footer-brand .brand {
+      margin-bottom: 20px;
+    }
+
+    .footer-brand p,
+    .footer-contact p,
+    .footer-contact address {
+      color: rgba(255, 255, 255, 0.68);
+      font-style: normal;
+    }
+
+    .footer-links h3,
+    .footer-contact h3 {
+      margin-bottom: 20px;
+      color: var(--white);
+      font-size: 1rem;
+    }
+
+    .footer-links li + li {
+      margin-top: 12px;
+    }
+
+    .footer-links a,
+    .footer-contact a {
+      color: rgba(255, 255, 255, 0.68);
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover,
+    .footer-contact a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      padding: 22px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-bottom p {
+      color: rgba(255, 255, 255, 0.58);
+      font-size: 0.92rem;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .delay-1 {
+      animation-delay: 0.12s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.24s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.36s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 1180px) {
+      .contact-card-grid,
+      .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .form-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      .navbar {
+        min-height: 76px;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      .nav-menu {
+        position: absolute;
+        top: 76px;
+        left: 24px;
+        right: 24px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 18px;
+        background: rgba(17, 24, 39, 0.98);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .nav-menu.active,
+      .navbar.active .nav-menu {
+        display: flex;
+      }
+
+      .nav-menu a {
+        display: block;
+        padding: 14px 12px;
+      }
+
+      .nav-menu a::after {
+        display: none;
+      }
+
+      .nav-menu .nav-cta {
+        margin-top: 8px;
+        text-align: center;
+      }
+
+      .section-padding {
+        padding: 86px 0;
+      }
+
+      .hero-inner {
+        padding: 92px 0;
+      }
+
+      .form-panel,
+      .form-intro,
+      .cta-banner {
+        padding: 42px 30px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container,
+      .navbar {
+        width: min(100% - 32px, 1440px);
+      }
+
+      .section-padding {
+        padding: 72px 0;
+      }
+
+      .brand-mark {
+        width: 42px;
+        height: 42px;
+      }
+
+      .brand-name {
+        font-size: 0.98rem;
+      }
+
+      .contact-card-grid,
+      .why-grid,
+      .form-row,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card,
+      .why-card,
+      .form-panel,
+      .form-intro {
+        padding: 28px 24px;
+      }
+
+      .cta-banner {
+        padding: 38px 24px;
+      }
+
+      .cta-banner::before {
+        inset: 18px;
+      }
+
+      .map-frame {
+        padding: 10px;
+      }
+
+      .map-frame iframe {
+        height: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="index.html" class="brand" aria-label="Swarna Enterprises home">
+       <img src="images/logo.png" alt="Swarna Enterprises Logo" class="brand-logo">
+        <span class="brand-name">Swarna Enterprises</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html#why-us">Why Us</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container hero-inner fade-up">
+        <span class="section-kicker">Industrial Machinery Support</span>
+        <h1>Contact Swarna Enterprises</h1>
+        <p>
+          Get in touch for industrial machinery, tea manufacturing machines, food processing
+          equipment, industrial motors, spare parts, and business inquiries.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-info-section section-padding" id="contact-info">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <span class="section-kicker">Contact Information</span>
+          <h2>Speak With Our Industrial Machinery Team</h2>
+          <p>
+            Reach Swarna Enterprises for machine enquiries, quotations, technical guidance,
+            spare parts, and service-related business support.
+          </p>
+        </div>
+
+        <div class="contact-card-grid">
+          <article class="contact-card fade-up">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 5.18 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.72c.12.91.33 1.8.62 2.65a2 2 0 0 1-.45 2.11L9 10.65a16 16 0 0 0 4.35 4.35l1.17-1.17a2 2 0 0 1 2.11-.45c.85.29 1.74.5 2.65.62A2 2 0 0 1 22 16.92Z"/></svg>
+            </div>
+            <h3>Phone</h3>
+            <p>
+              <a href="tel:+918220475217">+91 82204 75217</a><br />
+              <a href="tel:+918525959514">+91 85259 59514</a>
+            </p>
+          </article>
+
+          <article class="contact-card fade-up delay-1">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"/><path d="m22 6-10 7L2 6"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:swarnaenterprises19@gmail.com">swarnaenterprises19@gmail.com</a>
+            </p>
+          </article>
+
+          <article class="contact-card fade-up delay-2">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-1.24 4.39A8.5 8.5 0 0 1 8.7 19.7L3 21l1.3-5.7A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+            </div>
+            <h3>WhatsApp</h3>
+            <p><a href="tel:+918525959514">+91 8525959514</a></p>
+            <a class="whatsapp-btn" href="https://wa.me/918525959514?text=Hello%20Swarna%20Enterprises,%20I%20would%20like%20to%20know%20more%20about%20your%20machines" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          </article>
+
+          <article class="contact-card fade-up delay-3">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"/><path d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg>
+            </div>
+            <h3>Address</h3>
+            <address>
+              #361, Opp. A1 Chips,<br />
+              Pollachi Main Road,<br />
+              Iyer Hospital Bus Stop,<br />
+              Sundarapuram,<br />
+              Coimbatore - 641024
+            </address>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section section-padding" id="inquiry-form">
+      <div class="container form-layout">
+        <div class="form-intro fade-up">
+          <span class="section-kicker">Send Inquiry</span>
+          <h2>Tell Us About Your Machinery Requirement</h2>
+          <p>
+            Share your production needs, product interest, or service requirement. Our team
+            will review your enquiry and respond with suitable machinery guidance.
+          </p>
+        </div>
+
+        <div class="form-panel fade-up delay-1">
+          <form class="inquiry-form" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" autocomplete="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="company-name">Company Name</label>
+                <input type="text" id="company-name" name="company-name" autocomplete="organization" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" id="phone-number" name="phone-number" autocomplete="tel" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email-address">Email Address</label>
+                <input type="email" id="email-address" name="email-address" autocomplete="email" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="product-interest">Product Interested In</label>
+              <select id="product-interest" name="product-interest" required>
+                <option value="">Select a product category</option>
+                <option value="Tea Manufacturing Machines">Tea Manufacturing Machines</option>
+                <option value="Food Processing Machines">Food Processing Machines</option>
+                <option value="Industrial Motors">Industrial Motors</option>
+                <option value="Pumps">Pumps</option>
+                <option value="Spare Parts">Spare Parts</option>
+                <option value="Custom Machinery Requirement">Custom Machinery Requirement</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section section-padding">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <span class="section-kicker">Why Contact Us</span>
+          <h2>Industrial Support With Practical Expertise</h2>
+          <p>
+            Swarna Enterprises helps customers make informed choices for machinery,
+            motor systems, pumps, processing equipment, and spare parts.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card fade-up">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M13 2 3 14h8l-1 8 11-14h-8l1-6Z"/></svg>
+            </div>
+            <h3>Fast Response</h3>
+            <p>Quick Support for product and machinery inquiries.</p>
+          </article>
+
+          <article class="why-card fade-up delay-1">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.1-3.1A6 6 0 0 1 13 13.8L6 20.8a2.1 2.1 0 0 1-3-3l7-7A6 6 0 0 1 17.8 3l-3.1 3.3Z"/></svg>
+            </div>
+            <h3>Technical Expertise</h3>
+            <p>Guidance from experienced machinery professionals.</p>
+          </article>
+
+          <article class="why-card fade-up delay-2">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Reliable Service</h3>
+            <p>Trusted support before and after purchase.</p>
+          </article>
+
+          <article class="why-card fade-up delay-3">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20"/><path d="M2 12h20"/><path d="m4.93 4.93 14.14 14.14"/><path d="m19.07 4.93-14.14 14.14"/></svg>
+            </div>
+            <h3>Custom Solutions</h3>
+            <p>Machinery recommendations based on customer requirements.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section section-padding">
+      <div class="container">
+        <div class="section-heading fade-up">
+          <span class="section-kicker">Our Location</span>
+          <h2>Our Location</h2>
+          <p>Visit Swarna Enterprises at Sundarapuram, Coimbatore.</p>
+        </div>
+
+        <div class="map-frame fade-up delay-1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.0341510151748!2d76.96877427482087!3d10.96079288919941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85b75bd5ef5e9%3A0xe2dd016a199c7103!2sSwarna%20Enterprises-%20Motor%20Pumps%20Manufacturing%2FCopper%20Wire%20Dealer%2FKirloskar%20Pumps%20Dealer%20%2F%20Bearing%20Dealer%2F%20Grinder%20Spares!5e0!3m2!1sen!2sin!4v1781586924242!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section section-padding">
+      <div class="container">
+        <div class="cta-banner fade-up">
+          <h2>Ready to Discuss Your Machinery Requirements?</h2>
+          <p>
+            Contact Swarna Enterprises today for industrial machinery, motors, pumps, tea
+            manufacturing equipment, food processing machinery, and spare parts.
+          </p>
+          <a href="#contact-info" class="btn btn-primary">Contact Us Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p>Industrial Machinery Solutions</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Phone</h3>
+        <p>
+          <a href="tel:+918525959514">+91 85259 59514</a>
+        </p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Email & Address</h3>
+        <p><a href="mailto:swarnaenterprises19@gmail.com">swarnaenterprises19@gmail.com</a></p>
+        <address>
+          #361, Opp. A1 Chips,<br />
+          Pollachi Main Road,<br />
+          Iyer Hospital Bus Stop,<br />
+          Sundarapuram,<br />
+          Coimbatore - 641024
+        </address>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2026 Swarna Enterprises. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
