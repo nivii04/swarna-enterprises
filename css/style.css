@@ -838,6 +838,34 @@ p {
   .navbar,
   .hero-content {
     width: min(100% - 32px, 1440px);
+    .hero-section{
+    min-height: auto;
+}
+
+.hero-content{
+    padding: 70px 0 60px;
+}
+
+.hero-content h1{
+    font-size: 2.8rem;
+    line-height: 1.1;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.hero-actions{
+    margin-top: 30px;
+}
+
+.hero-media{
+    background-position: center;
+    background-size: cover;
+}
   }
 
   .section-padding {
